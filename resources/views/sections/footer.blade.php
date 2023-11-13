@@ -1,20 +1,25 @@
 <footer class="content-info">
   @php(dynamic_sidebar('sidebar-footer'))
-  <div class="about">
-    <h3>About</h3>
-    <p>...</p>
-  </div>
+  <div class="footer-container">
+    <div class="left-content">
+      <h3>About</h3>
+      <p>...</p>
 
-  <div class="example">
-    <h3>Example</h3>
-    <ul>
-      <li>All Products</li>
-      <li>New</li>
-      <li>Sale</li>
-    </ul>
-  </div>
+      <p class="web">@THE PREMIER COLLECTION</p>
+    </div>
 
-  <p>@THE PREMIER COLLECTION</p>
+    
+
+    <div class="right-content">
+      <h3>Example</h3>
+      <ul>
+        <li>All Products</li>
+        <li>New</li>
+        <li>Sale</li>
+      </ul>
+    </div>
+
+  </div>
   
   
 </footer>
