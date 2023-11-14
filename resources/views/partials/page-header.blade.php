@@ -1,10 +1,10 @@
 <div class="page-header">
   <header class="site-header">
-    <h2 id="title" class="header">
+    <a href="#" class="header"><h2 id="title" class="header">
       <span>THE</span><br />
       <span><b>PREMIER</b></span> <br />
       <span><b>COLLECTION</b></span>
-    </h2>
+    </h2></a>
       <div class="search-container">
         <div class="search-bar">
           <input type="text" id="search" placeholder="Search...">

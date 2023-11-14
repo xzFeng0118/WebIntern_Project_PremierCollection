@@ -3,6 +3,7 @@
 * {
     text-align: center;
     margin: 0;
+    padding: 0;
 }
 
 #demo {
@@ -29,6 +30,10 @@
 .nav-link {
     color: #fff;
     margin-right: 40px;
+}
+
+.header {
+    text-decoration: none;
 }
 
 .header span {
@@ -85,7 +90,31 @@
 }
 
 #feature {
+    
+    font-size: 24px; /* Adjust the font size as needed */
     text-align: center;
+    position: relative;
+    margin-bottom: 20px; /* Adjust as needed for spacing */
+}
+
+#feature::before,
+#feature::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 2px; /* Adjust the line thickness as needed */
+    background-color: #333; /* Adjust the line color as needed */
+}
+
+#feature::before {
+    right: 100%; /* Position the line to the left of the text */
+    margin-right: 10px; /* Adjust the distance between the line and text */
+}
+
+#feature::after {
+    left: 100%; /* Position the line to the right of the text */
+    margin-left: 10px; /* Adjust the distance between the line and text */
 }
 
 .feature-product {
@@ -106,6 +135,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 50px;
 }
 
 .product-block {
@@ -113,6 +143,8 @@
     margin: 10px;
     text-align: center;
     padding: 20px;
+    border: #351717;
+    border-radius: 3px;
 }
 
 .product-block img {
@@ -131,14 +163,64 @@
 }
 
 #help-button{
-    display: block;
+    display: flex;
+    text-align: center;
     width: 100%;
     border: none;
-    background-color: cornflowerblue;
+    background-color: #007bff;
     padding: 14px 28px;
     font-size: 16px;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}   
+
+.help-text {
     text-align: center;
+}
+
+.container {
+    display: flex;
+    background-color: #f0f0f0;
+    width: 100vw;
+    padding: 20px;
+    
+}
+
+.word {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+#carouselExample {
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 0;
+    text-align: right;
+}
+
+.paragraph {
+    
+    margin-left: 0px;
+    text-align: left;
+}
+
+.carousel-container {
+    text-align: right;
+    align-items: right;
+    margin-right: 0;
+    margin-bottom: 0;
+    
+    width: 600px;
+    height: 500px;
+}
+
+.blue-rectangle {
+    width: 40px;
+    height: 8px;
+    background-color: blue;
 }
 
 
@@ -153,11 +235,94 @@
 }
 
 .left-content {
-    margin-left: 10px;
+    margin-left: 200px;
     text-align: left;
 }
 
 .right-content {
-    margin-right: 30px;
-    text-align: right;
+    margin-right: 200px;
+    text-align: left;
+}
+
+#desc {
+    text-align: left;
+    word-wrap: break-word;
+}
+
+#about, #web {
+    margin-left: 0px;
+    text-align: left;
+}
+
+.product-block {
+    border: 2px solid #ddd; /* Set border width and color */
+    padding: 15px; /* Adjust padding as needed */
+    text-align: center; /* Center text within the block */
+    background-color: #f9f9f9; /* Set background color for better visibility */
+    margin: 10px; /* Add margin for spacing between product blocks */
+}
+
+.product-image {
+    max-width: 100%; /* Make sure the image doesn't exceed the container width */
+}
+
+.product-title {
+    font-weight: bold; /* Make the title bold, adjust as needed */
+    margin-top: 10px; /* Add margin between title and image */
+}
+
+.product-price {
+    color: #ff4500; /* Set the price color, adjust as needed */
+    margin-top: 5px; /* Add margin between price and title */
+}
+
+.product-block a {
+    display: inline-block; /* Make the link a block element */
+    margin-top: 10px; /* Add margin between price and the "View Details" link */
+    padding: 8px 15px; /* Add padding to the link */
+    background-color: #007bff; /* Set link background color */
+    color: #fff; /* Set link text color */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 5px; /* Add rounded corners to the link */
+}
+
+.product-block a:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.appa {
+    width: 100px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Adjust as needed for the desired spacing between buttons */
+}
+
+.icon-button {
+    width: 90px;
+    height: 90px;
+    padding: 10px; /* Adjust as needed for the button size */
+    margin-left: 100px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 50%; /* Add rounded corners to the button */
+    cursor: pointer;
+    
+}
+
+.icon-button img {
+    width: 60px;
+    height: 60px;
+}
+
+.icon-button:hover {
+    background-color: #0056b3; /* Change background color on hover */
 }

@@ -45,6 +45,16 @@
   </div>
 </div>
 
+<div class="button-container">
+        <button class="icon-button"><img src="{{ asset('../images/newproduct.png') }}" alt="iconbutton" class="iconbutton"></button>
+        <button class="icon-button"><img src="{{ asset('../images/drinkware.png') }}" alt="iconbutton1" class="iconbutton"></button>
+        <button class="icon-button"><img src="{{ asset('../images/book.png') }}" alt="iconbutton2" class="iconbutton"></button>
+        <button class="icon-button"><img src="{{ asset('../images/bags.png') }}" alt="iconbutton3" class="iconbutton"></button>
+        <button class="icon-button"><img src="{{ asset('../images/catalog.webp') }}" alt="iconbutton4" class="iconbutton"></button>
+    </div>
+
+<div class="blank-section"></div>
+
   <div class="feature-products">
     <h3 id="feature">FEATURE PRODUCTS</h3>
     <div class="product-grid">
@@ -175,8 +185,47 @@
 
     <div class="blank-section"></div>
 
+    <div class="container">
+      <div class="word">
+        <img src="{{ asset('../images/logo.jpg') }}" alt="logo" class="logo">
+        <div class="blank-section"></div>
+        <p class="paragraph"><b>Drinkware with personality.</b></p>
+        <div class="blue-rectangle"></div>
+        <p class="paragraph">Drink it all in. Whether you're sippin' with style, pouring with poise<br />
+        , drinking with dominance, or guzzling with grace. Ora drinkware by Spector & Co,<br /> 
+        welcomes it all. We're talking low minimums for current and classic styling made<br /> 
+        with high-quality metarials to long-lasting and premium branding solutions.<br /> 
+        It's the go-to drinkware solution ensuring that it always speaks a brand's truth.
+        </p>
+      </div>
+
+      <div class="carousel-container">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{{ asset('../images/product2.webp') }}" alt="images" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="{{ asset('../images/product3.webp') }}" alt="image1" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="{{ asset('../images/example2.jpg') }}" alt="image2" class="d-block w-100">
+            </div>
+        </div>
+
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
     <div class="block-button">
-      <button type="button" class="block" id="help-button"><p id="help">NEED HELP?</p>Contact Us</button>
+      <button type="button" class="block" id="help-button">NEED HELP?    Contact Us</button>
     </div>
     
 @endsection
